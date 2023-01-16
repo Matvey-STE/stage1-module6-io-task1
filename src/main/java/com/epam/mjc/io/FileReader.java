@@ -16,7 +16,7 @@ public class FileReader {
                 counter++;
             }
         } catch (IOException e) {
-            throw new RuntimeException("Runtime exception");
+            e.printStackTrace();
         }
         String name = results[0];
         int age = Integer.parseInt(results[1]);
