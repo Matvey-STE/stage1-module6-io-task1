@@ -12,12 +12,11 @@ public class FileReader {
             int counter = 0;
             while ((line = reader.readLine()) != null){
                 String [] items = line.split(" ");
-                System.out.println(items[1]);
                 results[counter] = items[1];
                 counter++;
             }
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            throw new RuntimeException("Runtime exception");
         }
         String name = results[0];
         int age = Integer.parseInt(results[1]);
